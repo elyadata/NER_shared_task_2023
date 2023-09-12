@@ -1,0 +1,17 @@
+beautifulsoup4
+jieba
+Jinja2
+matplotlib
+nltk
+numpy
+pandas
+pynvml
+scikit-learn
+scipy
+spacy
+tensorboard
+tokenizers
+torch==1.7.1
+TorchSnooper
+tqdm
+transformers

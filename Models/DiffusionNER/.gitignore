@@ -1,0 +1,7 @@
+.idea/
+**/__pycache__
+.vscode/
+runs/
+configs/analysis
+checkpoint
+data

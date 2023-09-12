@@ -1,0 +1,4 @@
+tqdm==4.65.0
+loguru==0.7.0
+notebook==7.0.3
+
