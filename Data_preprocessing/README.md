@@ -1,8 +1,9 @@
 # Wojood Pre-processing
 In the context of the Arabic NER SharedTask 2023, this repository contains all the pre-processing scripts on the Wojood dataset.  
 In order to use the Wojood dataset with the models, the OIB-formatted manifest must be converted to a compatible format. 
-`PIQN` and `DiffusionNER` share the same JSON manifest format requirement.  
-This folder also contains the data re-sampling scripts used.
+`PIQN` and `DiffusionNER` share the same JSON manifest format requirement. Whereas `BINDER` requires a JSONLINES manifest.
+
+Moreover, this folder also contains the data re-sampling scripts used.
 
 ## How to run:
 ### Requirements:
@@ -27,4 +28,27 @@ python preprocess_wojood.py --dataset-directory <folder_path> --save-directory .
 
 # If you want to convert a single file:
 python preprocess_wojood.py --file <file_path> --save-directory ./save
+```
+### BINDER:
+ [paper](https://arxiv.org/abs/2208.14565)
+```shell
+cd wojood_preprocess_for_binder
+
+# If you want to convert all files in a specified folder:
+python preprocess_wojood.py --dataset-directory <folder_path> --save-directory ./save
+
+# If you want to convert a single file:
+python preprocess_wojood.py --file <file_path> --save-directory ./save
+```
+
+### Triaffine Nested NER model
+[paper](https://arxiv.org/abs/2110.07480)
+```shell
+cd wojood_preprocess_for_triaffine
+
+# If you want to convert all files in a specified folder:
+python prepare_data_for_triaffine.py --dataset-directory <folder_path> --save-directory ./save
+
+# If you want to convert a single file:
+python prepare_data_for_triaffine.py --file <file_path> --save-directory ./save
 ```

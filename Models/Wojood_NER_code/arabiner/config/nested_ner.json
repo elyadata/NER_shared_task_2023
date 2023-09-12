@@ -1,0 +1,51 @@
+{
+    "output_path": "output/nested/03-07-2023_exp3",
+    "train_path": "wojood_arabic_NER/nested/train.txt",
+    "test_path": "wojood_arabic_NER/nested/val.txt",
+    "val_path": "wojood_arabic_NER/nested/val.txt",
+    "seed": 1,
+    "batch_size": 18,
+    "num_workers": 0,
+    "gpus": [
+        0,
+        1
+    ],
+    "overwrite": true,
+    "log_interval": 10,
+    "data_config": {
+        "fn": "arabiner.data.datasets.NestedTagsDataset",
+        "kwargs": {
+            "max_seq_len": 512
+        }
+    },
+    "network_config": {
+        "fn": "arabiner.nn.BertNestedTagger",
+        "kwargs": {
+            "dropout": 0.1,
+            "bert_model": "aubmindlab/bert-base-arabertv2"
+        }
+    },
+    "trainer_config": {
+        "fn": "arabiner.trainers.BertNestedTrainer",
+        "kwargs": {
+            "max_epochs": 50,
+            "patience": 15
+        }
+    },
+    "optimizer": {
+        "fn": "torch.optim.AdamW",
+        "kwargs": {
+            "lr": 0.0001
+        }
+    },
+    "lr_scheduler": {
+        "fn": "torch.optim.lr_scheduler.ExponentialLR",
+        "kwargs": {
+            "gamma": 1
+        }
+    },
+    "loss": {
+        "fn": "torch.nn.CrossEntropyLoss",
+        "kwargs": {}
+    }
+}

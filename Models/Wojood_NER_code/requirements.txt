@@ -1,0 +1,8 @@
+tensorboard
+torch
+transformers
+torchtext
+torchvision
+seqeval
+natsort
+loguru

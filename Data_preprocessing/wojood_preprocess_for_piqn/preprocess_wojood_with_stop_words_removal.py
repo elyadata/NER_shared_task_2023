@@ -1,7 +1,6 @@
 import argparse
 import json
 import os
-import re
 from pathlib import Path
 
 from loguru import logger
@@ -20,8 +19,7 @@ def extract_tokens(sentence: str, stop_words: list) -> list:
     tokens = []
     for token_with_label in sentence.split('\n'):
         token = token_with_label.split("\t")[0]
-        token = re.sub(r'\.{2,}', '.', token)
-        if token not in stop_words and token not in ["?", "!"]:
+        if token not in stop_words:
             tokens.append(token)
     return tokens
 
