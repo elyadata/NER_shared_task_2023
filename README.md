@@ -10,6 +10,7 @@ with each model.
 Detailed instructions on how to train the models and perform data-preprocessing are available in the `readme.md` files 
 of each folder.
 
+If you use this code please cite our paper :
 
 ```bibtex
 @inproceedings{DBLP:conf/wanlp/LaouirineEB23,
