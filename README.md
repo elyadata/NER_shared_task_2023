@@ -11,6 +11,7 @@ Detailed instructions on how to train the models and perform data-preprocessing 
 of each folder.
 
 
+```bibtex
 @inproceedings{DBLP:conf/wanlp/LaouirineEB23,
   author       = {Imen Laouirine and Haroun Elleuch and Fethi Bougares},
   title        = {{ELYADATA} at WojoodNER Shared Task: Data and Model-centric Approaches for Arabic Flat and Nested {NER}},
@@ -20,3 +21,4 @@ of each folder.
   year         = {2023},
   url          = {https://aclanthology.org/2023.arabicnlp-1.84},
 }
+```
