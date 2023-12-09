@@ -9,3 +9,14 @@ with each model.
 
 Detailed instructions on how to train the models and perform data-preprocessing are available in the `readme.md` files 
 of each folder.
+
+
+@inproceedings{DBLP:conf/wanlp/LaouirineEB23,
+  author       = {Imen Laouirine and Haroun Elleuch and Fethi Bougares},
+  title        = {{ELYADATA} at WojoodNER Shared Task: Data and Model-centric Approaches for Arabic Flat and Nested {NER}},
+  booktitle    = {Proceedings of ArabicNLP 2023, Singapore (Hybrid), December 7, 2023},
+  pages        = {759--764},
+  publisher    = {Association for Computational Linguistics},
+  year         = {2023},
+  url          = {https://aclanthology.org/2023.arabicnlp-1.84},
+}
